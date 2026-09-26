@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ESB KAMONYI | ECOLE SAINTE BERNADETTE KAMONYI</title>
+<meta name="description" content="ESB Kamonyi — Ecole Sainte Bernadette Kamonyi. Catholic school of excellence: Nursery, Primary, Secondary. Faith, Discipline, Excellence.">
+<link rel="icon" href="src/assets/crest.svg" type="image/svg+xml">
+<link rel="stylesheet" href="src/assets/style.css">
+<link rel="stylesheet" href="src/assets/extra.css">
+</head>
+<body>
+<header class="top"><div class="nav">
+<div class="crest"><img class="clogo" src="src/assets/crest.svg" alt="" onerror="this.remove()"><img class="clogo" src="src/assets/logo.png" alt="ESB Kamonyi" onerror="this.remove()"><span>ESB</span></div>
+<div class="brand"><b>ESB KAMONYI</b><small>ECOLE SAINTE BERNADETTE KAMONYI</small></div>
+<button id="hamburger" aria-label="Menu">☰</button>
+<nav class="links" id="pubnav">
+<a href="#home" data-p="home" class="active">Home</a><a href="#about" data-p="about">About</a><a href="#academics" data-p="academics">Academics</a><a href="#admissions" data-p="admissions">Admissions</a><a href="#news" data-p="news">News &amp; Events</a><a href="#gallery" data-p="gallery">Gallery</a><a href="#staff" data-p="staff">Staff</a><a href="#contact" data-p="contact">Contact</a>
+<a href="dashboard.html" class="btn sm" style="margin-left:6px">Portal Login →</a>
+<button id="themeBtn" title="Dark / light mode">◐</button>
+</nav></div></header>
+
+<div class="hero"><div class="hero-inner">
+<div><span class="pill">✦ Admissions open 2025–2026 · Nursery → Primary → Secondary</span>
+<h1>Faith. Discipline.<br>Excellence.</h1>
+<p class="lead"><b>ECOLE SAINTE BERNADETTE KAMONYI</b> — a Catholic school in Kamonyi District forming disciplined, faithful and competent learners, from nursery to secondary.</p>
+<div class="toolbar"><button class="btn gold" onclick="go('admissions')">Apply for Admission</button><button class="btn" style="background:rgba(255,255,255,.16);box-shadow:none;border:1px solid #ffffff66" onclick="go('about')">Discover our school</button></div>
+<div class="value-row"><span class="value-chip">✝ Faith</span><span class="value-chip">🎖 Discipline</span><span class="value-chip">📚 Excellence</span><span class="value-chip">🤝 Service</span></div>
+</div>
+<div class="hero-card"><h3>📢 Latest announcements</h3><div id="homeAnn">Loading…</div><hr style="border:0;border-top:1px dashed var(--line)"><h3>📅 Upcoming events</h3><div id="homeEv">Loading…</div></div>
+</div></div>
+
+<div class="wrap">
+<!-- ================= HOME ================= -->
+<section class="page active" id="pg-home">
+<div class="grid g4" id="stats"></div>
+<div class="grid g3" style="margin-top:18px">
+<div class="card hover"><span class="eyebrow">Why ESB Kamonyi</span><h3>Why families choose us</h3><ul style="padding-left:18px;margin:8px 0"><li>Qualified, caring teachers</li><li>Strong discipline &amp; faith formation</li><li>District-leading examination results</li><li>Science lab, library &amp; ICT room</li><li>Sports, clubs, choir &amp; scouting</li></ul></div>
+<div class="card hover"><span class="eyebrow">Programs</span><h3>From first steps to S6</h3><p><span class="badge info">Nursery</span> Play-based foundation in faith and language.</p><p><span class="badge info">Primary P1–P6</span> Literacy, numeracy, trilingual growth.</p><p><span class="badge info">Secondary S1–S6</span> Sciences, languages &amp; humanities.</p><button class="btn ghost sm" onclick="go('academics')">Explore academics →</button></div>
+<div class="card hover"><span class="eyebrow">Voices</span><h3>Testimonials</h3><p><i>"ESB Kamonyi built my discipline and my faith." — <b>Aline, alumna</b></i></p><p><i>"Teachers follow every child closely." — <b>Parent, Kamonyi</b></i></p><p><i>"My son loves the science club." — <b>Parent, Runda</b></i></p></div>
+</div>
+<div class="grid g2" style="margin-top:18px">
+<div class="card"><span class="eyebrow">Mission &amp; Vision</span><h3>Who we are</h3><p><b>Mission:</b> to provide quality holistic education rooted in Catholic faith.</p><p><b>Vision:</b> to be a model school of faith, discipline and academic excellence in Rwanda.</p><p><b>Values:</b> Faith · Discipline · Excellence · Integrity · Service.</p></div>
+<div class="card"><span class="eyebrow">Newsroom</span><h3>Latest news</h3><div id="homeNews"></div><button class="btn ghost sm" onclick="go('news')">All news &amp; events →</button></div>
+</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="page" id="pg-about"><div class="card">
+<span class="eyebrow">About us</span><h2>Ecole Sainte Bernadette Kamonyi</h2>
+<img src="src/assets/school.jpg" alt="ESB Kamonyi campus" style="width:100%;max-height:340px;object-fit:cover;border-radius:14px;margin-bottom:14px;border:1px solid var(--line)" onerror="this.remove()">
+<p><b>History.</b> Founded by the Catholic parish of Kamonyi to serve local families, our school has grown from a small primary school into a full Nursery–Primary–Secondary institution known across the district for discipline and results.</p>
+<p><b>Profile.</b> Catholic day school · Kamonyi District, Southern Province, Rwanda · trilingual environment (Kinyarwanda · English · French).</p>
+<div class="grid g3">
+<div><h3>🎯 Mission</h3><p>Quality holistic education rooted in faith.</p></div>
+<div><h3>🔭 Vision</h3><p>A model school of faith, discipline and academic excellence.</p></div>
+<div><h3>💎 Core values</h3><p>Faith · Discipline · Excellence · Integrity · Service.</p></div>
+</div>
+<h3>👥 Leadership</h3><p>Head Teacher · Deputy in charge of Studies · Deputy in charge of Discipline · Bursar · School Chaplain · Heads of Departments.</p>
+<h3>📖 Academic philosophy</h3><p>Every child can succeed: close individual follow-up, remedial support, and continuous assessment — CATs, mid-term, end-term and mock examinations.</p>
+<h3>🏫 Facilities</h3><p>Modern classrooms · science laboratory · library · ICT room · chapel · playground · canteen · clean water &amp; sanitation.</p>
+</div></section>
+
+<!-- ================= ACADEMICS ================= -->
+<section class="page" id="pg-academics"><div class="grid g2">
+<div class="card"><span class="eyebrow">Academics</span><h2>Learning journey</h2>
+<h3>🧸 Nursery</h3><p>Socialisation, language awakening, motor skills and early faith.</p>
+<h3>✏️ Primary (P1–P6)</h3><p>Kinyarwanda, English, French, Mathematics, Science, Social Studies, Religion.</p>
+<h3>📗 Lower Secondary — O-Level (S1–S3)</h3><p>Mathematics, English, Kinyarwanda, French, Kiswahili, Physics, Chemistry, Biology, History, Geography, ICT, Entrepreneurship, Religion.</p>
+<h3>📕 Upper Secondary — A-Level (S4–S6)</h3><p>Science combinations (PCM, PCB), technology &amp; business (<b>MCE — Mathematics, Computer Science, Economics</b>) and humanities &amp; languages (MEG, HEG, HGL): Advanced Mathematics, Physics, Chemistry, Biology, Computer Science, English Literature, French, Kinyarwanda, History, Geography, Economics, General Paper, ICT, Entrepreneurship.</p></div>
+<div class="card"><span class="eyebrow">Assessment</span><h2>Examinations</h2>
+<p>CATs · Mid-term · End-term · Mock · Final examinations.</p>
+<p><span class="badge ok">A ≥ 80</span> <span class="badge info">B ≥ 70</span> <span class="badge goldb">C ≥ 60</span> <span class="badge warn">D ≥ 50</span> <span class="badge bad">F &lt; 50</span> — pass mark 50%.</p>
+<h3>🗓 Academic calendar 2025–26</h3><p>Term 1: Sep–Dec · Term 2: Jan–Mar · Term 3: Apr–Jul.<br>Mid-term examinations start <b>20 October</b>.</p>
+<h3>💻 Learning resources</h3><p>Notes, videos, quizzes and assignments live in the <a href="dashboard.html"><b>Student Portal</b></a>.</p></div>
+</div></section>
+
+<!-- ================= ADMISSIONS ================= -->
+<section class="page" id="pg-admissions">
+<div class="card" style="margin-bottom:18px"><span class="eyebrow">Admissions 2025–26</span><h2>Five steps to join ESB Kamonyi</h2>
+<div class="steps"><div class="step"><b>1</b>Fill the online form</div><div class="step"><b>2</b>Submit documents</div><div class="step"><b>3</b>Placement interview</div><div class="step"><b>4</b>Pay school fees</div><div class="step"><b>5</b>Receive admission no.</div></div></div>
+<div class="grid g2">
+<div class="card"><h3>📝 Online application</h3>
+<form id="admForm"><label>Student name</label><input name="studentName" required placeholder="e.g. Keza Uwase"><div class="grid g2"><div><label>Gender</label><select name="gender"><option>Female</option><option>Male</option></select></div><div><label>Date of birth</label><input type="date" name="dob" required></div></div><label>Class requested</label><select name="classRequested"><option>Nursery</option><option>P1</option><option>P2</option><option>P3</option><option>P4</option><option>P5</option><option>P6</option><option>S1 A</option><option>S1 B</option><option>S2 A</option><option>S2 B</option><option>S3</option><option>S4</option><option>S5</option><option>S6</option></select><label>Parent / guardian name</label><input name="parentName" required><label>Phone</label><input name="phone" required placeholder="+250 …"><label>Previous school</label><input name="previousSchool" placeholder="If any"><button class="btn">Submit application</button></form><p id="admMsg"></p></div>
+<div class="card"><h3>🔍 Check application status</h3><input id="trackId" placeholder="Paste your Tracking ID"><button class="btn ghost" id="trackBtn">Check status</button><p id="trackMsg"></p><hr style="border:0;border-top:1px dashed var(--line)"><h3>📎 Required documents</h3><ul><li>Birth certificate (copy)</li><li>Previous report card</li><li>2 passport photos</li><li>Parent / guardian ID</li></ul><h3>📞 Need help?</h3><p>Call <b>+250 788 000 000</b> or write to <b>info@esbkamonyi.rw</b>.</p></div>
+</div></section>
+
+<!-- ================= NEWS ================= -->
+<section class="page" id="pg-news"><div class="grid g2"><div class="card"><span class="eyebrow">Newsroom</span><h2>School news</h2><div id="newsList"></div></div><div class="card"><span class="eyebrow">Agenda</span><h2>Events</h2><div id="evList"></div></div></div></section>
+
+<!-- ================= GALLERY ================= -->
+<section class="page" id="pg-gallery"><div class="card"><span class="eyebrow">Gallery</span><h2>Life at ESB Kamonyi</h2><div class="grid g3" id="galGrid"></div></div></section>
+
+<!-- ================= STAFF ================= -->
+<section class="page" id="pg-staff"><div class="card"><span class="eyebrow">Our people</span><h2>Staff — teachers, director, DOS &amp; discipline office</h2><p>Set each profile (photo, office, subject) in the portal under <b>Teachers</b> — everything here updates automatically and is visible to all visitors.</p><div class="grid g4" id="staffGrid"></div></div></section>
+
+<!-- ================= CONTACT ================= -->
+<section class="page" id="pg-contact"><div class="grid g2">
+<div class="card"><span class="eyebrow">Contact</span><h2>Visit or reach us</h2><p>📍 Kamonyi District, Southern Province, Rwanda<br>📞 +250 788 000 000<br>✉️ info@esbkamonyi.rw</p><p>Follow us: <b>Facebook · X · YouTube · Instagram</b> — @esbkamonyi</p><iframe title="ESB Kamonyi map" style="width:100%;height:230px;border:0;border-radius:12px" src="https://www.google.com/maps?q=Kamonyi,Rwanda&output=embed" loading="lazy"></iframe></div>
+<div class="card"><h3>✉️ Send us a message</h3><form id="cForm"><label>Your name</label><input name="name" required><label>Email</label><input name="email" type="email" required><label>Message</label><textarea name="message" rows="5" required placeholder="How can we help?"></textarea><button class="btn">Send message</button></form><p id="cMsg"></p></div>
+</div></section>
+</div>
+
+<footer><div class="foot">
+<div><b style="font-size:1.2rem">ESB KAMONYI</b><br><small>ECOLE SAINTE BERNADETTE KAMONYI<br>Faith · Discipline · Excellence<br>Kamonyi District, Southern Province, Rwanda</small></div>
+<div><b>School</b><br><small>About · Academics · Admissions · News · Gallery · Contact</small><br><br><b>Portals</b><br><small>Admin · Teacher · Student · Parent</small></div>
+<div><b>Contact</b><br><small>+250 788 000 000<br>info@esbkamonyi.rw<br>Mon–Fri 7:00–17:00</small></div>
+</div><div class="copy"><span>© 2026 ESB Kamonyi — Ecole Sainte Bernadette Kamonyi.</span><span>Designed for faith &amp; excellence ✦</span></div></footer>
+<div class="toast" id="toast"></div>
+<script src="src/services/api.js"></script>
+<script>
+function showPage(p){document.querySelectorAll('#pubnav a[data-p]').forEach(b=>b.classList.toggle('active',b.dataset.p===p));document.querySelectorAll('section.page').forEach(s=>s.classList.toggle('active',s.id==='pg-'+p));document.getElementById('pubnav').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});}
+// Direct links: #about, #admissions … open that page immediately, even on first load
+function pageFromHash(){const h=(location.hash||'#home').slice(1);return document.getElementById('pg-'+h)?h:'home';}
+function go(p){if(location.hash==='#'+p)showPage(p);else location.hash=p;}
+window.addEventListener('hashchange',()=>showPage(pageFromHash()));
+document.getElementById('hamburger').onclick=()=>document.getElementById('pubnav').classList.toggle('open');
+showPage(pageFromHash());
+document.getElementById('themeBtn').onclick=()=>document.body.classList.toggle('theme-dark');
+const demo={ann:[{title:'Term 1 Mid-term Exams start 20 Oct',body:'All students must check the timetable on the notice board.'},{title:'Parents meeting — 10 Oct, school hall',body:'All parents are warmly invited.'}],news:[{title:'ESB Kamonyi celebrates 98% pass rate',body:'Our S3 students excelled in district examinations.'}],events:[{title:'General Parents Meeting',description:'School hall · 10 Oct 2026 · 9:00 AM.'}],staff:[{name:'School Director',office:'School Director',subject:'Administration'},{name:'DOS Office',office:'DOS',subject:'Academics'},{name:'Discipline Office',office:'Discipline Officer',subject:'Student Welfare'},{name:'Our Teachers',office:'Teacher',subject:'All subjects'}]};
+async function load(){
+try{const s=await api('/staff');if(s&&s.length)demo.staff=s;}catch{}
+try{const a=await api('/announcements');if(a.data&&a.data.length)demo.ann=a.data;}catch{}
+try{const n=await api('/news');if(n.data&&n.data.length)demo.news=n.data;}catch{}
+try{const e=await api('/events');if(e.data&&e.data.length)demo.events=e.data;}catch{}
+document.getElementById('homeAnn').innerHTML=demo.ann.slice(0,3).map(x=>'<div class="list-item">📢 <b>'+x.title+'</b><br><small>'+(x.body||'')+'</small></div>').join('');
+document.getElementById('homeEv').innerHTML=demo.events.slice(0,3).map(x=>'<div class="list-item">📅 <b>'+x.title+'</b><br><small>'+(x.description||x.date||'')+'</small></div>').join('');
+document.getElementById('homeNews').innerHTML=demo.news.slice(0,3).map(x=>'<div class="list-item">📰 <b>'+x.title+'</b><br><small>'+(x.body||'')+'</small></div>').join('');
+document.getElementById('newsList').innerHTML=demo.news.map(x=>'<div class="list-item"><span class="avatar">N</span><b>'+x.title+'</b><br><small>'+(x.body||'')+' · '+(x.category||'General')+'</small></div>').join('');
+document.getElementById('evList').innerHTML=demo.events.map(x=>'<div class="list-item"><span class="avatar">E</span><b>'+x.title+'</b><br><small>'+(x.description||'')+' · '+(x.date||'')+'</small></div>').join('');
+document.getElementById('galGrid').innerHTML=[['Science Fair 2025','Our young scientists exhibit'],['Sports Day','Football, athletics & joy'],['Choir & Culture','Voices of Kamonyi'],['Library Hour','Reading for excellence'],['ICT Room','Digital skills for all'],['School Chapel','Faith at the centre']].map(t=>'<div class="gal"><span style="font-size:1.6rem">◈</span><div>'+t[0]+'<br><small style="opacity:.8">'+t[1]+'</small></div></div>').join('');
+document.getElementById('galGrid').innerHTML='<div class="gal" style="padding:0;overflow:hidden"><img src="src/assets/school.jpg" alt="ESB Kamonyi campus" style="width:100%;height:150px;object-fit:cover;display:block" onerror="this.closest(\'.gal\').remove()"></div>'+document.getElementById('galGrid').innerHTML;
+document.getElementById('stats').innerHTML=[['1200+','Students'],['65','Teachers'],['98%','Pass rate'],['30+','Clubs & sports']].map(s=>'<div class="card hover stat-card"><div class="stat">'+s[0]+'</div><small><b>'+s[1]+'</b></small></div>').join('');
+const _bb=API_BASE.replace(/\/api$/,'');
+document.getElementById('staffGrid').innerHTML=demo.staff.map(p=>{const img=p.photo?'<img src="'+(p.photo.startsWith('http')?p.photo:_bb+p.photo)+'" style="width:84px;height:84px;border-radius:50%;object-fit:cover;margin:0 auto 10px;display:block" alt="">':'<span class="avatar" style="width:64px;height:64px;font-size:1.4rem;margin:0 auto 10px">'+(p.name||'?')[0]+'</span>';return '<div class="card hover" style="text-align:center">'+img+'<b>'+p.name+'</b><br><span class="badge goldb">'+(p.office||'Teacher')+'</span><br><small>'+(p.subject||'')+(p.qualification?' · '+p.qualification:'')+'</small></div>';}).join('');}
+document.getElementById('admForm').onsubmit=async e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));try{const r=await api('/auth/register-admission','POST',f);document.getElementById('admMsg').innerHTML='<span class="badge ok">✓ Application received — Tracking ID: '+r.trackingId+'</span>';}catch(err){const arr=store.get('admissions',[]);const t='adm_'+Date.now();arr.push({...f,id:t,status:'pending'});store.set('admissions',arr);document.getElementById('admMsg').innerHTML='<span class="badge warn">Saved (offline demo) — Tracking ID: '+t+'</span>';}e.target.reset();};
+document.getElementById('trackBtn').onclick=async()=>{const v=document.getElementById('trackId').value.trim();if(!v)return;try{const r=await api('/track/'+encodeURIComponent(v));document.getElementById('trackMsg').innerHTML='Application for <b>'+(r.studentName||'')+'</b> ('+(r.classRequested||'')+') — Status: <span class="badge info">'+r.status+'</span>';}catch{document.getElementById('trackMsg').innerHTML='<span class="badge warn">Tracking ID not found</span>';}};
+document.getElementById('cForm').onsubmit=async e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));try{await api('/contact','POST',f);document.getElementById('cMsg').innerHTML='<span class="badge ok">✓ Message sent. Thank you!</span>';}catch{document.getElementById('cMsg').textContent='Message saved (demo). We will contact you.';}e.target.reset();};
+load();
+</script></body></html>
